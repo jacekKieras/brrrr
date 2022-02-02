@@ -25,9 +25,9 @@ class Game {
     isEnterPressed = false;
     wasTipsScreenShown = false;
     email = new Mail(this.scene);
-    airplane = new Airplane(this.scene, this.email);
+    //airplane = new Airplane(this.scene, this.email);
     intersects = [];
-    projects = new Projects(this.scene);
+    //projects = new Projects(this.scene);
 
     showTipsScreen() {
         document.querySelector('.tips').style.display = 'block';
