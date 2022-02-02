@@ -71,7 +71,7 @@ class Car {
             carObject.add(carModel.scene);
             carObject.scale.set(1, 1, 1);
             this.car.add(carObject);
-            this.car.rotation.y+=Math.PI;
+            //this.car.rotation.y+=Math.PI;
         })
 
 
