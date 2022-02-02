@@ -148,7 +148,7 @@ class Game {
         requestAnimationFrame(this.animate.bind(this));
         if (this.isEnterPressed == true) {
             this.car.animate();
-            this.airplane.animate();
+            //this.airplane.animate();
             this.updatePhysics();
             this.raycaster.setFromCamera(this.mouse, this.camera);
             this.intersects = this.raycaster.intersectObjects(this.scene.children);

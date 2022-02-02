@@ -76,8 +76,8 @@ class Buttons {
                 newCenter.position.y -= 3.5;
                 buttonObject.add(newCenter);
                 console.log('contactProjects');
-                this.projectTip.style.display = 'block';
-                projects.slideOutProjects();
+                //this.projectTip.style.display = 'block';
+                //projects.slideOutProjects();
                 clearInterval(interval);
                 this.addCollectedButtonsValue();
                 if (this.collectedButtons == 3) {
