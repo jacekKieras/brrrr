@@ -67,7 +67,7 @@ class Car {
         //CarBody
         const carObject = new THREE.Object3D();
         const gltfLoader = new THREE.GLTFLoader();
-        gltfLoader.load('/game-portfolio/assets/car/bmw5.glb', (carModel) => {
+        gltfLoader.load('/brrrr/assets/car/bmw5.glb', (carModel) => {
             carObject.add(carModel.scene);
             carObject.scale.set(25, 25, 25);
             this.car.add(carObject);
