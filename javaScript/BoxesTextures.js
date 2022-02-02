@@ -90,6 +90,41 @@ class BoxesTextures {
         box54: {
             mesh: null,
             body: null
+        },
+        box61: {
+            mesh: null,
+            body: null
+        },
+        box62: {
+            mesh: null,
+            body: null
+        },
+        box63: {
+            mesh: null,
+            body: null
+        }
+        ,
+        box64: {
+            mesh: null,
+            body: null
+        }
+        ,
+        box71: {
+            mesh: null,
+            body: null
+        },
+        box72: {
+            mesh: null,
+            body: null
+        },
+        box73: {
+            mesh: null,
+            body: null
+        }
+        ,
+        box74: {
+            mesh: null,
+            body: null
         }
     }
 
@@ -114,6 +149,99 @@ class BoxesTextures {
         this.add52Box();
         this.add53Box();
         this.add54Box();
+        this.add61Box();
+        this.add62Box();
+        this.add63Box();
+        this.add64Box();
+        this.add71Box();
+        this.add72Box();
+        this.add73Box();
+        this.add74Box();
+    }
+    add71Box() {
+        const rwdTexture = new THREE.TextureLoader(this.loadingManager).load('../brrrr/assets/javascript.png');
+        this.boxes.box71.mesh = new THREE.Mesh(new THREE.BoxGeometry(40, 40, 40), new THREE.MeshBasicMaterial({ map: rwdTexture }));
+        this.scene.add(this.boxes.box71.mesh);
+        this.boxes.box71.body = new CANNON.Body({ mass: 1100 });
+        const rwdShape = new CANNON.Box(new CANNON.Vec3(20, 20, 20));
+        this.boxes.box71.body.addShape(rwdShape);
+        this.boxes.box71.body.position.set(-60, 570, 4100);
+        this.world.addBody(this.boxes.box71.body);
+    }
+
+    add72Box() {
+        const rwdTexture = new THREE.TextureLoader(this.loadingManager).load('../brrrr/assets/restOkno.png');
+        this.boxes.box72.mesh = new THREE.Mesh(new THREE.BoxGeometry(40, 40, 40), new THREE.MeshBasicMaterial({ map: rwdTexture }));
+        this.scene.add(this.boxes.box72.mesh);
+        this.boxes.box72.body = new CANNON.Body({ mass: 1100 });
+        const rwdShape = new CANNON.Box(new CANNON.Vec3(20, 20, 20));
+        this.boxes.box72.body.addShape(rwdShape);
+        this.boxes.box72.body.position.set(-20, 570, 4100);
+        this.world.addBody(this.boxes.box62.body);
+    }
+
+    add73Box() {
+        const rwdTexture = new THREE.TextureLoader(this.loadingManager).load('../brrrr/assets/restOkno.png');
+        this.boxes.box73.mesh = new THREE.Mesh(new THREE.BoxGeometry(40, 40, 40), new THREE.MeshBasicMaterial({ map: rwdTexture }));
+        this.scene.add(this.boxes.box73.mesh);
+        this.boxes.box73.body = new CANNON.Body({ mass: 1100 });
+        const rwdShape = new CANNON.Box(new CANNON.Vec3(20, 20, 20));
+        this.boxes.box73.body.addShape(rwdShape);
+        this.boxes.box73.body.position.set(20, 570, 4100);
+        this.world.addBody(this.boxes.box73.body);
+    }
+    add74Box() {
+        const rwdTexture = new THREE.TextureLoader(this.loadingManager).load('../brrrr/assets/javascript.png');
+        this.boxes.box74.mesh = new THREE.Mesh(new THREE.BoxGeometry(40, 40, 40), new THREE.MeshBasicMaterial({ map: rwdTexture }));
+        this.scene.add(this.boxes.box74.mesh);
+        this.boxes.box74.body = new CANNON.Body({ mass: 1100 });
+        const rwdShape = new CANNON.Box(new CANNON.Vec3(20, 20, 20));
+        this.boxes.box74.body.addShape(rwdShape);
+        this.boxes.box74.body.position.set(60, 570, 4100);
+        this.world.addBody(this.boxes.box74.body);
+    }
+
+    add61Box() {
+        const rwdTexture = new THREE.TextureLoader(this.loadingManager).load('../brrrr/assets/javascript.png');
+        this.boxes.box61.mesh = new THREE.Mesh(new THREE.BoxGeometry(40, 40, 40), new THREE.MeshBasicMaterial({ map: rwdTexture }));
+        this.scene.add(this.boxes.box61.mesh);
+        this.boxes.box61.body = new CANNON.Body({ mass: 1100 });
+        const rwdShape = new CANNON.Box(new CANNON.Vec3(20, 20, 20));
+        this.boxes.box61.body.addShape(rwdShape);
+        this.boxes.box61.body.position.set(-60, 530, 4100);
+        this.world.addBody(this.boxes.box61.body);
+    }
+
+    add62Box() {
+        const rwdTexture = new THREE.TextureLoader(this.loadingManager).load('../brrrr/assets/restOkno.png');
+        this.boxes.box62.mesh = new THREE.Mesh(new THREE.BoxGeometry(40, 40, 40), new THREE.MeshBasicMaterial({ map: rwdTexture }));
+        this.scene.add(this.boxes.box62.mesh);
+        this.boxes.box62.body = new CANNON.Body({ mass: 1100 });
+        const rwdShape = new CANNON.Box(new CANNON.Vec3(20, 20, 20));
+        this.boxes.box62.body.addShape(rwdShape);
+        this.boxes.box62.body.position.set(-20, 530, 4100);
+        this.world.addBody(this.boxes.box62.body);
+    }
+
+    add63Box() {
+        const rwdTexture = new THREE.TextureLoader(this.loadingManager).load('../brrrr/assets/restOkno.png');
+        this.boxes.box63.mesh = new THREE.Mesh(new THREE.BoxGeometry(40, 40, 40), new THREE.MeshBasicMaterial({ map: rwdTexture }));
+        this.scene.add(this.boxes.box63.mesh);
+        this.boxes.box63.body = new CANNON.Body({ mass: 1100 });
+        const rwdShape = new CANNON.Box(new CANNON.Vec3(20, 20, 20));
+        this.boxes.box63.body.addShape(rwdShape);
+        this.boxes.box63.body.position.set(20, 530, 4100);
+        this.world.addBody(this.boxes.box63.body);
+    }
+    add64Box() {
+        const rwdTexture = new THREE.TextureLoader(this.loadingManager).load('../brrrr/assets/javascript.png');
+        this.boxes.box64.mesh = new THREE.Mesh(new THREE.BoxGeometry(40, 40, 40), new THREE.MeshBasicMaterial({ map: rwdTexture }));
+        this.scene.add(this.boxes.box64.mesh);
+        this.boxes.box64.body = new CANNON.Body({ mass: 1100 });
+        const rwdShape = new CANNON.Box(new CANNON.Vec3(20, 20, 20));
+        this.boxes.box64.body.addShape(rwdShape);
+        this.boxes.box64.body.position.set(60, 530, 4100);
+        this.world.addBody(this.boxes.box64.body);
     }
 
     add51Box() {
