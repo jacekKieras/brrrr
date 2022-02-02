@@ -5,7 +5,7 @@ class BoxesTextures {
         this.loadingManager = loadingManager;
     }
 
-    offset = 150;
+    offset = 200;
     world;
     scene;
     loadingManager;
@@ -103,13 +103,11 @@ class BoxesTextures {
         box63: {
             mesh: null,
             body: null
-        }
-        ,
+        },
         box64: {
             mesh: null,
             body: null
-        }
-        ,
+        },
         box71: {
             mesh: null,
             body: null
@@ -121,8 +119,7 @@ class BoxesTextures {
         box73: {
             mesh: null,
             body: null
-        }
-        ,
+        },
         box74: {
             mesh: null,
             body: null
@@ -178,7 +175,7 @@ class BoxesTextures {
         const rwdShape = new CANNON.Box(new CANNON.Vec3(20, 20, 20));
         this.boxes.box72.body.addShape(rwdShape);
         this.boxes.box72.body.position.set(-20, 570 - this.offset, 4100);
-        this.world.addBody(this.boxes.box62.body);
+        this.world.addBody(this.boxes.box72.body);
     }
 
     add73Box() {
