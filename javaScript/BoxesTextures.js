@@ -53,6 +53,10 @@ class BoxesTextures {
             mesh: null,
             body: null
         },
+        angular1: {
+            mesh: null,
+            body: null
+        }
     }
 
     addTechnologiesBoxes() {
@@ -70,6 +74,16 @@ class BoxesTextures {
         this.addThreeBox();
     }
 
+    addRwdBox() {
+        const rwdTexture = new THREE.TextureLoader(this.loadingManager).load('../brrrr/assets/restOkno.png');
+        this.boxes.rwd.mesh = new THREE.Mesh(new THREE.BoxGeometry(40, 40, 40), new THREE.MeshBasicMaterial({ map: rwdTexture }));
+        this.scene.add(this.boxes.rwd.mesh);
+        this.boxes.rwd.body = new CANNON.Body({ mass: 1100 });
+        const rwdShape = new CANNON.Box(new CANNON.Vec3(20, 20, 20));
+        this.boxes.rwd.body.addShape(rwdShape);
+        this.boxes.rwd.body.position.set(-20, 400, 4100);
+        this.world.addBody(this.boxes.rwd.body);
+    }
 
     addThreeBox() {
         const threeTexture = new THREE.TextureLoader(this.loadingManager).load('../brrrr/assets/restOkno.png');
@@ -82,6 +96,31 @@ class BoxesTextures {
         this.world.addBody(this.boxes.three.body);
     }
 
+
+
+    addAngularBox() {
+        const angularTexture = new THREE.TextureLoader(this.LoadingManager).load('../brrrr/assets/restOkno.png');
+        this.boxes.angular.mesh = new THREE.Mesh(new THREE.BoxGeometry(40, 40, 40), new THREE.MeshBasicMaterial({ map: angularTexture }));
+        this.scene.add(this.boxes.angular.mesh);
+        this.boxes.angular.body = new CANNON.Body({ mass: 1100 });
+        const angularShape = new CANNON.Box(new CANNON.Vec3(20, 20, 20));
+        this.boxes.angular.body.addShape(angularShape);
+        this.boxes.angular.body.position.set(20, 400, 4100);
+        this.world.addBody(this.boxes.angular.body);
+    }
+
+    addAngularBox1() {
+        const angularTexture = new THREE.TextureLoader(this.LoadingManager).load('../brrrr/assets/javascript.png');
+        this.boxes.angular1.mesh = new THREE.Mesh(new THREE.BoxGeometry(40, 40, 40), new THREE.MeshBasicMaterial({ map: angularTexture }));
+        this.scene.add(this.boxes.angular.mesh);
+        this.boxes.angular1.body = new CANNON.Body({ mass: 1100 });
+        const angularShape = new CANNON.Box(new CANNON.Vec3(20, 20, 20));
+        this.boxes.angular1.body.addShape(angularShape);
+        this.boxes.angular1.body.position.set(60, 400, 4100);
+        this.world.addBody(this.boxes.angular.body);
+    }
+
+    
     addRestBox() {
         const restTexture = new THREE.TextureLoader(this.loadingManager).load('../brrrr/assets/restOkno.png');
         this.boxes.rest.mesh = new THREE.Mesh(new THREE.BoxGeometry(40, 40, 40), new THREE.MeshBasicMaterial({ map: restTexture }));
@@ -104,41 +143,7 @@ class BoxesTextures {
         this.world.addBody(this.boxes.sql.body);
     }
 
-    addRwdBox() {
-        const rwdTexture = new THREE.TextureLoader(this.loadingManager).load('../brrrr/assets/restOkno.png');
-        this.boxes.rwd.mesh = new THREE.Mesh(new THREE.BoxGeometry(40, 40, 40), new THREE.MeshBasicMaterial({ map: rwdTexture }));
-        this.scene.add(this.boxes.rwd.mesh);
-        this.boxes.rwd.body = new CANNON.Body({ mass: 1100 });
-        const rwdShape = new CANNON.Box(new CANNON.Vec3(20, 20, 20));
-        this.boxes.rwd.body.addShape(rwdShape);
-        this.boxes.rwd.body.position.set(-20, 400, 4100);
-        this.world.addBody(this.boxes.rwd.body);
-    }
-
-
-
-    addAngularBox() {
-        const angularTexture = new THREE.TextureLoader(this.LoadingManager).load('../brrrr/assets/restOkno.png');
-        this.boxes.angular.mesh = new THREE.Mesh(new THREE.BoxGeometry(40, 40, 40), new THREE.MeshBasicMaterial({ map: angularTexture }));
-        this.scene.add(this.boxes.angular.mesh);
-        this.boxes.angular.body = new CANNON.Body({ mass: 1100 });
-        const angularShape = new CANNON.Box(new CANNON.Vec3(20, 20, 20));
-        this.boxes.angular.body.addShape(angularShape);
-        this.boxes.angular.body.position.set(20, 400, 4100);
-        this.world.addBody(this.boxes.angular.body);
-    }
-
-    addAngularBox1() {
-        const angularTexture = new THREE.TextureLoader(this.LoadingManager).load('../brrrr/assets/javascript.png');
-        this.boxes.angular.mesh = new THREE.Mesh(new THREE.BoxGeometry(40, 40, 40), new THREE.MeshBasicMaterial({ map: angularTexture }));
-        this.scene.add(this.boxes.angular.mesh);
-        this.boxes.angular.body = new CANNON.Body({ mass: 1100 });
-        const angularShape = new CANNON.Box(new CANNON.Vec3(20, 20, 20));
-        this.boxes.angular.body.addShape(angularShape);
-        this.boxes.angular.body.position.set(60, 400, 4100);
-        this.world.addBody(this.boxes.angular.body);
-    }
-
+    
     addCssBox() {
         const cssTexture = new THREE.TextureLoader(this.LoadingManager).load('../brrrr/assets/restOkno.png');
         this.boxes.css.mesh = new THREE.Mesh(new THREE.BoxGeometry(40, 40, 40), new THREE.MeshBasicMaterial({ map: cssTexture }));
