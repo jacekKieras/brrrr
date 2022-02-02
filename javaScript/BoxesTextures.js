@@ -5,6 +5,7 @@ class BoxesTextures {
         this.loadingManager = loadingManager;
     }
 
+    offset = 150;
     world;
     scene;
     loadingManager;
@@ -165,7 +166,7 @@ class BoxesTextures {
         this.boxes.box71.body = new CANNON.Body({ mass: 1100 });
         const rwdShape = new CANNON.Box(new CANNON.Vec3(20, 20, 20));
         this.boxes.box71.body.addShape(rwdShape);
-        this.boxes.box71.body.position.set(-60, 570, 4100);
+        this.boxes.box71.body.position.set(-60, 570 - this.offset, 4100);
         this.world.addBody(this.boxes.box71.body);
     }
 
@@ -176,7 +177,7 @@ class BoxesTextures {
         this.boxes.box72.body = new CANNON.Body({ mass: 1100 });
         const rwdShape = new CANNON.Box(new CANNON.Vec3(20, 20, 20));
         this.boxes.box72.body.addShape(rwdShape);
-        this.boxes.box72.body.position.set(-20, 570, 4100);
+        this.boxes.box72.body.position.set(-20, 570 - this.offset, 4100);
         this.world.addBody(this.boxes.box62.body);
     }
 
@@ -187,7 +188,7 @@ class BoxesTextures {
         this.boxes.box73.body = new CANNON.Body({ mass: 1100 });
         const rwdShape = new CANNON.Box(new CANNON.Vec3(20, 20, 20));
         this.boxes.box73.body.addShape(rwdShape);
-        this.boxes.box73.body.position.set(20, 570, 4100);
+        this.boxes.box73.body.position.set(20, 570 - this.offset, 4100);
         this.world.addBody(this.boxes.box73.body);
     }
     add74Box() {
@@ -197,7 +198,7 @@ class BoxesTextures {
         this.boxes.box74.body = new CANNON.Body({ mass: 1100 });
         const rwdShape = new CANNON.Box(new CANNON.Vec3(20, 20, 20));
         this.boxes.box74.body.addShape(rwdShape);
-        this.boxes.box74.body.position.set(60, 570, 4100);
+        this.boxes.box74.body.position.set(60, 570 - this.offset, 4100);
         this.world.addBody(this.boxes.box74.body);
     }
 
@@ -208,7 +209,7 @@ class BoxesTextures {
         this.boxes.box61.body = new CANNON.Body({ mass: 1100 });
         const rwdShape = new CANNON.Box(new CANNON.Vec3(20, 20, 20));
         this.boxes.box61.body.addShape(rwdShape);
-        this.boxes.box61.body.position.set(-60, 530, 4100);
+        this.boxes.box61.body.position.set(-60, 530 - this.offset, 4100);
         this.world.addBody(this.boxes.box61.body);
     }
 
@@ -219,7 +220,7 @@ class BoxesTextures {
         this.boxes.box62.body = new CANNON.Body({ mass: 1100 });
         const rwdShape = new CANNON.Box(new CANNON.Vec3(20, 20, 20));
         this.boxes.box62.body.addShape(rwdShape);
-        this.boxes.box62.body.position.set(-20, 530, 4100);
+        this.boxes.box62.body.position.set(-20, 530 - this.offset, 4100);
         this.world.addBody(this.boxes.box62.body);
     }
 
@@ -230,7 +231,7 @@ class BoxesTextures {
         this.boxes.box63.body = new CANNON.Body({ mass: 1100 });
         const rwdShape = new CANNON.Box(new CANNON.Vec3(20, 20, 20));
         this.boxes.box63.body.addShape(rwdShape);
-        this.boxes.box63.body.position.set(20, 530, 4100);
+        this.boxes.box63.body.position.set(20, 530 - this.offset, 4100);
         this.world.addBody(this.boxes.box63.body);
     }
     add64Box() {
@@ -240,7 +241,7 @@ class BoxesTextures {
         this.boxes.box64.body = new CANNON.Body({ mass: 1100 });
         const rwdShape = new CANNON.Box(new CANNON.Vec3(20, 20, 20));
         this.boxes.box64.body.addShape(rwdShape);
-        this.boxes.box64.body.position.set(60, 530, 4100);
+        this.boxes.box64.body.position.set(60, 530 - this.offset, 4100);
         this.world.addBody(this.boxes.box64.body);
     }
 
@@ -251,7 +252,7 @@ class BoxesTextures {
         this.boxes.box51.body = new CANNON.Body({ mass: 1100 });
         const rwdShape = new CANNON.Box(new CANNON.Vec3(20, 20, 20));
         this.boxes.box51.body.addShape(rwdShape);
-        this.boxes.box51.body.position.set(-60, 490, 4100);
+        this.boxes.box51.body.position.set(-60, 490 - this.offset, 4100);
         this.world.addBody(this.boxes.box51.body);
     }
 
@@ -262,7 +263,7 @@ class BoxesTextures {
         this.boxes.box52.body = new CANNON.Body({ mass: 1100 });
         const rwdShape = new CANNON.Box(new CANNON.Vec3(20, 20, 20));
         this.boxes.box52.body.addShape(rwdShape);
-        this.boxes.box52.body.position.set(-20, 490, 4100);
+        this.boxes.box52.body.position.set(-20, 490 - this.offset, 4100);
         this.world.addBody(this.boxes.box52.body);
     }
 
@@ -273,7 +274,7 @@ class BoxesTextures {
         this.boxes.box53.body = new CANNON.Body({ mass: 1100 });
         const rwdShape = new CANNON.Box(new CANNON.Vec3(20, 20, 20));
         this.boxes.box53.body.addShape(rwdShape);
-        this.boxes.box53.body.position.set(20, 490, 4100);
+        this.boxes.box53.body.position.set(20, 490 - this.offset, 4100);
         this.world.addBody(this.boxes.box53.body);
     }
     add54Box() {
@@ -283,7 +284,7 @@ class BoxesTextures {
         this.boxes.box54.body = new CANNON.Body({ mass: 1100 });
         const rwdShape = new CANNON.Box(new CANNON.Vec3(20, 20, 20));
         this.boxes.box54.body.addShape(rwdShape);
-        this.boxes.box54.body.position.set(60, 490, 4100);
+        this.boxes.box54.body.position.set(60, 490 - this.offset, 4100);
         this.world.addBody(this.boxes.box54.body);
     }
     add41Box() {
@@ -293,7 +294,7 @@ class BoxesTextures {
         this.boxes.box41.body = new CANNON.Body({ mass: 1100 });
         const rwdShape = new CANNON.Box(new CANNON.Vec3(20, 20, 20));
         this.boxes.box41.body.addShape(rwdShape);
-        this.boxes.box41.body.position.set(-60, 450, 4100);
+        this.boxes.box41.body.position.set(-60, 450 - this.offset, 4100);
         this.world.addBody(this.boxes.box41.body);
     }
 
@@ -304,7 +305,7 @@ class BoxesTextures {
         this.boxes.box42.body = new CANNON.Body({ mass: 1100 });
         const rwdShape = new CANNON.Box(new CANNON.Vec3(20, 20, 20));
         this.boxes.box42.body.addShape(rwdShape);
-        this.boxes.box42.body.position.set(-20, 450, 4100);
+        this.boxes.box42.body.position.set(-20, 450 - this.offset, 4100);
         this.world.addBody(this.boxes.box42.body);
     }
 
@@ -315,7 +316,7 @@ class BoxesTextures {
         this.boxes.box43.body = new CANNON.Body({ mass: 1100 });
         const rwdShape = new CANNON.Box(new CANNON.Vec3(20, 20, 20));
         this.boxes.box43.body.addShape(rwdShape);
-        this.boxes.box43.body.position.set(20, 450, 4100);
+        this.boxes.box43.body.position.set(20, 450 - this.offset, 4100);
         this.world.addBody(this.boxes.box43.body);
     }
 
@@ -326,7 +327,7 @@ class BoxesTextures {
         this.boxes.box44.body = new CANNON.Body({ mass: 1100 });
         const rwdShape = new CANNON.Box(new CANNON.Vec3(20, 20, 20));
         this.boxes.box44.body.addShape(rwdShape);
-        this.boxes.box44.body.position.set(60, 450, 4100);
+        this.boxes.box44.body.position.set(60, 450 - this.offset, 4100);
         this.world.addBody(this.boxes.box44.body);
     }
 
@@ -337,7 +338,7 @@ class BoxesTextures {
         this.boxes.rwd.body = new CANNON.Body({ mass: 1100 });
         const rwdShape = new CANNON.Box(new CANNON.Vec3(20, 20, 20));
         this.boxes.rwd.body.addShape(rwdShape);
-        this.boxes.rwd.body.position.set(-20, 400, 4100);
+        this.boxes.rwd.body.position.set(-20, 400 - this.offset, 4100);
         this.world.addBody(this.boxes.rwd.body);
     }
 
@@ -348,7 +349,7 @@ class BoxesTextures {
         this.boxes.three.body = new CANNON.Body({ mass: 1100 });
         const threeShape = new CANNON.Box(new CANNON.Vec3(20, 20, 20));
         this.boxes.three.body.addShape(threeShape);
-        this.boxes.three.body.position.set(-60, 400, 4100);
+        this.boxes.three.body.position.set(-60, 400 - this.offset, 4100);
         this.world.addBody(this.boxes.three.body);
     }
 
@@ -361,7 +362,7 @@ class BoxesTextures {
         this.boxes.angular.body = new CANNON.Body({ mass: 1100 });
         const angularShape = new CANNON.Box(new CANNON.Vec3(20, 20, 20));
         this.boxes.angular.body.addShape(angularShape);
-        this.boxes.angular.body.position.set(20, 400, 4100);
+        this.boxes.angular.body.position.set(20, 400 - this.offset, 4100);
         this.world.addBody(this.boxes.angular.body);
     }
 
@@ -372,7 +373,7 @@ class BoxesTextures {
         this.boxes.angular1.body = new CANNON.Body({ mass: 1100 });
         const angularShape = new CANNON.Box(new CANNON.Vec3(20, 20, 20));
         this.boxes.angular1.body.addShape(angularShape);
-        this.boxes.angular1.body.position.set(60, 400, 4100);
+        this.boxes.angular1.body.position.set(60, 400 - this.offset, 4100);
         this.world.addBody(this.boxes.angular1.body);
     }
 
@@ -384,7 +385,7 @@ class BoxesTextures {
         this.boxes.rest.body = new CANNON.Body({ mass: 1100 });
         const restShape = new CANNON.Box(new CANNON.Vec3(20, 20, 20));
         this.boxes.rest.body.addShape(restShape);
-        this.boxes.rest.body.position.set(-20, 280, 4100);
+        this.boxes.rest.body.position.set(-20, 280 - this.offset, 4100);
         this.world.addBody(this.boxes.rest.body);
     }
 
@@ -395,7 +396,7 @@ class BoxesTextures {
         this.boxes.sql.body = new CANNON.Body({ mass: 1100 });
         const sqlShape = new CANNON.Box(new CANNON.Vec3(20, 20, 20));
         this.boxes.sql.body.addShape(sqlShape);
-        this.boxes.sql.body.position.set(60, 280, 4100);
+        this.boxes.sql.body.position.set(60, 280 - this.offset, 4100);
         this.world.addBody(this.boxes.sql.body);
     }
 
@@ -407,7 +408,7 @@ class BoxesTextures {
         this.boxes.css.body = new CANNON.Body({ mass: 1100 });
         const cssShape = new CANNON.Box(new CANNON.Vec3(20, 20, 20));
         this.boxes.css.body.addShape(cssShape);
-        this.boxes.css.body.position.set(-20, 340, 4100);
+        this.boxes.css.body.position.set(-20, 340 - this.offset, 4100);
         this.world.addBody(this.boxes.css.body);
     }
 
@@ -418,7 +419,7 @@ class BoxesTextures {
         this.boxes.html.body = new CANNON.Body({ mass: 1100 });
         const htmlShape = new CANNON.Box(new CANNON.Vec3(20, 20, 20));
         this.boxes.html.body.addShape(htmlShape);
-        this.boxes.html.body.position.set(-60, 340, 4100);
+        this.boxes.html.body.position.set(-60, 340 - this.offset, 4100);
         this.world.addBody(this.boxes.html.body);
     }
 
@@ -429,7 +430,7 @@ class BoxesTextures {
         this.boxes.entityFramework.body = new CANNON.Body({ mass: 1100 });
         const entityFrameworkShape = new CANNON.Box(new CANNON.Vec3(20, 20, 20));
         this.boxes.entityFramework.body.addShape(entityFrameworkShape);
-        this.boxes.entityFramework.body.position.set(-60, 280, 4100);
+        this.boxes.entityFramework.body.position.set(-60, 280 - this.offset, 4100);
         this.world.addBody(this.boxes.entityFramework.body);
     }
 
@@ -440,7 +441,7 @@ class BoxesTextures {
         this.boxes.cSharp.body = new CANNON.Body({ mass: 1100 });
         const cSharpShape = new CANNON.Box(new CANNON.Vec3(20, 20, 20));
         this.boxes.cSharp.body.addShape(cSharpShape);
-        this.boxes.cSharp.body.position.set(20, 280, 4100);
+        this.boxes.cSharp.body.position.set(20, 280 - this.offset, 4100);
         this.world.addBody(this.boxes.cSharp.body);
     }
 
@@ -451,7 +452,7 @@ class BoxesTextures {
         this.boxes.javaScript.body = new CANNON.Body({ mass: 1100 });
         const javaScriptShape = new CANNON.Box(new CANNON.Vec3(20, 20, 20));
         this.boxes.javaScript.body.addShape(javaScriptShape);
-        this.boxes.javaScript.body.position.set(60, 340, 4100);
+        this.boxes.javaScript.body.position.set(60, 340 - this.offset, 4100);
         this.world.addBody(this.boxes.javaScript.body);
     }
     addTypeScriptBox() {
@@ -461,7 +462,7 @@ class BoxesTextures {
         this.boxes.typeScript.body = new CANNON.Body({ mass: 1100 });
         const typeScriptShape = new CANNON.Box(new CANNON.Vec3(20, 20, 20));
         this.boxes.typeScript.body.addShape(typeScriptShape);
-        this.boxes.typeScript.body.position.set(20, 340, 4100);
+        this.boxes.typeScript.body.position.set(20, 340 - this.offset, 4100);
         this.world.addBody(this.boxes.typeScript.body);
     }
 
