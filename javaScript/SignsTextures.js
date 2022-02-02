@@ -154,14 +154,14 @@ class SignsTextures {
         bar.position.z += 100;
         highwaySignObject.add(bar);
         const highwaySignTexture = new THREE.TextureLoader(this.LoadingManager).load("../brrrr/assets/highwaySign.png");
-        const highwaySignGeometry = new THREE.PlaneGeometry(150, 80, 10);
+        const highwaySignGeometry = new THREE.PlaneGeometry(75, 40, 10);
         const highwaySignMaterial = new THREE.MeshBasicMaterial({ map: highwaySignTexture, transparent: true, side: THREE.FrontSide, alphaTest: 0.4 });
         const highwaySign = new THREE.Mesh(highwaySignGeometry, highwaySignMaterial);
         highwaySign.position.y += 100;
         highwaySign.position.z += 100;
         highwaySign.position.x -= 2;
         highwaySign.rotation.y -= Math.PI / 2;
-        const signBack = new THREE.Mesh(new THREE.PlaneGeometry(55, 30, 2), new THREE.MeshBasicMaterial({ color: 0x787878 }));
+        const signBack = new THREE.Mesh(new THREE.PlaneGeometry(24, 15, 2), new THREE.MeshBasicMaterial({ color: 0x787878 }));
         signBack.position.y += 100;
         signBack.position.z += 100;
         signBack.position.x += 1;
