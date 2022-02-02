@@ -1,9 +1,9 @@
 
-// class Mail {
-//     constructor(scene) {
-//         this.scene = scene;
-//         this.arrowContact.addEventListener('click', this.showEmailContainer.bind(this));
-//     }
+class Mail {
+    constructor(scene) {
+        this.scene = scene;
+        //this.arrowContact.addEventListener('click', this.showEmailContainer.bind(this));
+    }
 
 //     scene;
 //     writeEmail = false;
@@ -11,7 +11,7 @@
 //     onMailClick = document.querySelector('.email-button').addEventListener('click', this.showEmailForm.bind(this), false);
 //     sendEmailButton = document.querySelector('.send-button').addEventListener('click', this.sendEmail.bind(this), false);
 //     emailForm = document.querySelector('.e-mail-form');
-//     emailFormCloseButton = document.querySelector('.email-form-close').addEventListener('click', this.closeEmailForm.bind(this), false);
+     emailFormCloseButton = document.querySelector('.email-form-close').addEventListener('click', this.closeEmailForm.bind(this), false);
 //     contactInfoCloseButton = document.querySelector('.email-close-button').addEventListener('click', this.closeEmailContainer.bind(this), false);
 //     arrowContact = document.querySelector('.expand-email-button');
 
@@ -25,9 +25,9 @@
 //         this.arrowContact.style.display = 'block';
 //     }
 
-//     closeEmailForm() {
-//         this.emailForm.style.display = 'none';
-//     }
+     closeEmailForm() {
+         this.emailForm.style.display = 'none';
+     }
 
 //     showSendingMessage() {
 //         const message = document.querySelector('.sending');
@@ -66,4 +66,4 @@
 //         }
 //         else alert('Za późno,samolot juz odleciał.');
 //     }
-// }
+}
