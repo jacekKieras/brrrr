@@ -117,7 +117,7 @@ class BoxesTextures {
         const angularShape = new CANNON.Box(new CANNON.Vec3(20, 20, 20));
         this.boxes.angular1.body.addShape(angularShape);
         this.boxes.angular1.body.position.set(60, 400, 4100);
-        this.world.addBody(this.boxes.angular.body);
+        this.world.addBody(this.boxes.angular1.body);
     }
 
     
