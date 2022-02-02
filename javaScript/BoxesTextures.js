@@ -86,7 +86,7 @@ class BoxesTextures {
     }
 
     addThreeBox() {
-        const threeTexture = new THREE.TextureLoader(this.loadingManager).load('../brrrr/assets/restOkno.png');
+        const threeTexture = new THREE.TextureLoader(this.loadingManager).load('../brrrr/assets/javascript.png');
         this.boxes.three.mesh = new THREE.Mesh(new THREE.BoxGeometry(40, 40, 40), new THREE.MeshBasicMaterial({ map: threeTexture }));
         this.scene.add(this.boxes.three.mesh);
         this.boxes.three.body = new CANNON.Body({ mass: 1100 });
