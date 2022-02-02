@@ -71,7 +71,7 @@ class BoxesTextures {
 
 
     addThreeBox() {
-        const threeTexture = new THREE.TextureLoader(this.loadingManager).load('../brrrr/assets/three.png');
+        const threeTexture = new THREE.TextureLoader(this.loadingManager).load('../brrrr/assets/rest.png');
         this.boxes.three.mesh = new THREE.Mesh(new THREE.BoxGeometry(40, 40, 40), new THREE.MeshBasicMaterial({ map: threeTexture }));
         this.scene.add(this.boxes.three.mesh);
         this.boxes.three.body = new CANNON.Body({ mass: 1100 });
@@ -93,7 +93,7 @@ class BoxesTextures {
     }
 
     addSqlBox() {
-        const sqlTexture = new THREE.TextureLoader(this.loadingManager).load('../brrrr/assets/sql.png');
+        const sqlTexture = new THREE.TextureLoader(this.loadingManager).load('../brrrr/assets/javascript.png');
         this.boxes.sql.mesh = new THREE.Mesh(new THREE.BoxGeometry(40, 40, 40), new THREE.MeshBasicMaterial({ map: sqlTexture }));
         this.scene.add(this.boxes.sql.mesh);
         this.boxes.sql.body = new CANNON.Body({ mass: 1100 });
@@ -104,7 +104,7 @@ class BoxesTextures {
     }
 
     addRwdBox() {
-        const rwdTexture = new THREE.TextureLoader(this.loadingManager).load('../brrrr/assets/rwd.png');
+        const rwdTexture = new THREE.TextureLoader(this.loadingManager).load('../brrrr/assets/rest.png');
         this.boxes.rwd.mesh = new THREE.Mesh(new THREE.BoxGeometry(40, 40, 40), new THREE.MeshBasicMaterial({ map: rwdTexture }));
         this.scene.add(this.boxes.rwd.mesh);
         this.boxes.rwd.body = new CANNON.Body({ mass: 1100 });
@@ -117,7 +117,7 @@ class BoxesTextures {
 
 
     addAngularBox() {
-        const angularTexture = new THREE.TextureLoader(this.LoadingManager).load('../brrrr/assets/angular.png');
+        const angularTexture = new THREE.TextureLoader(this.LoadingManager).load('../brrrr/assets/rest.png');
         this.boxes.angular.mesh = new THREE.Mesh(new THREE.BoxGeometry(40, 40, 40), new THREE.MeshBasicMaterial({ map: angularTexture }));
         this.scene.add(this.boxes.angular.mesh);
         this.boxes.angular.body = new CANNON.Body({ mass: 1100 });
@@ -128,7 +128,7 @@ class BoxesTextures {
     }
 
     addCssBox() {
-        const cssTexture = new THREE.TextureLoader(this.LoadingManager).load('../brrrr/assets/css.png');
+        const cssTexture = new THREE.TextureLoader(this.LoadingManager).load('../brrrr/assets/rest.png');
         this.boxes.css.mesh = new THREE.Mesh(new THREE.BoxGeometry(40, 40, 40), new THREE.MeshBasicMaterial({ map: cssTexture }));
         this.scene.add(this.boxes.css.mesh);
         this.boxes.css.body = new CANNON.Body({ mass: 1100 });
@@ -139,7 +139,7 @@ class BoxesTextures {
     }
 
     addHtmlBox() {
-        const htmlTexture = new THREE.TextureLoader(this.loadingManager).load('../brrrr/assets/html.png');
+        const htmlTexture = new THREE.TextureLoader(this.loadingManager).load('../brrrr/assets/javascript.png');
         this.boxes.html.mesh = new THREE.Mesh(new THREE.BoxGeometry(40, 40, 40), new THREE.MeshBasicMaterial({ map: htmlTexture }));
         this.scene.add(this.boxes.html.mesh);
         this.boxes.html.body = new CANNON.Body({ mass: 1100 });
@@ -150,7 +150,7 @@ class BoxesTextures {
     }
 
     addEntityFrameworkBox() {
-        const entityFrameworkTexture = new THREE.TextureLoader(this.loadingManager).load('../brrrr/assets/ef.png');
+        const entityFrameworkTexture = new THREE.TextureLoader(this.loadingManager).load('../brrrr/assets/javascript.png');
         this.boxes.entityFramework.mesh = new THREE.Mesh(new THREE.BoxGeometry(40, 40, 40), new THREE.MeshBasicMaterial({ map: entityFrameworkTexture }));
         this.scene.add(this.boxes.entityFramework.mesh);
         this.boxes.entityFramework.body = new CANNON.Body({ mass: 1100 });
@@ -161,7 +161,7 @@ class BoxesTextures {
     }
 
     addCSharpBox() {
-        const cSharpTexture = new THREE.TextureLoader(this.loadingManager).load('../brrrr/assets/csharp.png');
+        const cSharpTexture = new THREE.TextureLoader(this.loadingManager).load('../brrrr/assets/rest.png');
         this.boxes.cSharp.mesh = new THREE.Mesh(new THREE.BoxGeometry(40, 40, 40), new THREE.MeshBasicMaterial({ map: cSharpTexture }));
         this.scene.add(this.boxes.cSharp.mesh);
         this.boxes.cSharp.body = new CANNON.Body({ mass: 1100 });
@@ -182,7 +182,7 @@ class BoxesTextures {
         this.world.addBody(this.boxes.javaScript.body);
     }
     addTypeScriptBox() {
-        const typeScriptTexture = new THREE.TextureLoader(this.loadingManager).load('../brrrr/assets/typescript.png');
+        const typeScriptTexture = new THREE.TextureLoader(this.loadingManager).load('../brrrr/assets/rest.png');
         this.boxes.typeScript.mesh = new THREE.Mesh(new THREE.BoxGeometry(40, 40, 40), new THREE.MeshBasicMaterial({ map: typeScriptTexture }));
         this.scene.add(this.boxes.typeScript.mesh);
         this.boxes.typeScript.body = new CANNON.Body({ mass: 1100 });
