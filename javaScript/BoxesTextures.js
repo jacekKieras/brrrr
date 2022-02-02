@@ -63,6 +63,7 @@ class BoxesTextures {
         this.addHtmlBox();
         this.addCssBox();
         this.addAngularBox();
+        this.addAngularBox1();
         this.addRwdBox();
         this.addSqlBox();
         this.addRestBox();
@@ -104,7 +105,7 @@ class BoxesTextures {
     }
 
     addRwdBox() {
-        const rwdTexture = new THREE.TextureLoader(this.loadingManager).load('../brrrr/assets/javascript.png');
+        const rwdTexture = new THREE.TextureLoader(this.loadingManager).load('../brrrr/assets/restOkno.png');
         this.boxes.rwd.mesh = new THREE.Mesh(new THREE.BoxGeometry(40, 40, 40), new THREE.MeshBasicMaterial({ map: rwdTexture }));
         this.scene.add(this.boxes.rwd.mesh);
         this.boxes.rwd.body = new CANNON.Body({ mass: 1100 });
@@ -117,7 +118,7 @@ class BoxesTextures {
 
 
     addAngularBox() {
-        const angularTexture = new THREE.TextureLoader(this.LoadingManager).load('../brrrr/assets/javascript.png');
+        const angularTexture = new THREE.TextureLoader(this.LoadingManager).load('../brrrr/assets/restOkno.png');
         this.boxes.angular.mesh = new THREE.Mesh(new THREE.BoxGeometry(40, 40, 40), new THREE.MeshBasicMaterial({ map: angularTexture }));
         this.scene.add(this.boxes.angular.mesh);
         this.boxes.angular.body = new CANNON.Body({ mass: 1100 });
@@ -128,7 +129,7 @@ class BoxesTextures {
     }
 
     addAngularBox1() {
-        const angularTexture = new THREE.TextureLoader(this.LoadingManager).load('../brrrr/assets/restOkno.png');
+        const angularTexture = new THREE.TextureLoader(this.LoadingManager).load('../brrrr/assets/javascript.png');
         this.boxes.angular.mesh = new THREE.Mesh(new THREE.BoxGeometry(40, 40, 40), new THREE.MeshBasicMaterial({ map: angularTexture }));
         this.scene.add(this.boxes.angular.mesh);
         this.boxes.angular.body = new CANNON.Body({ mass: 1100 });
