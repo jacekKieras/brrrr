@@ -32,7 +32,7 @@ class SignsTextures {
         bar.position.x += 100;
         bar.position.z -= 73;
         signObject.add(bar);
-        const signTexture = new THREE.TextureLoader(this.LoadingManager).load("../game-portfolio/assets/roundaboutSignContact.png");
+        const signTexture = new THREE.TextureLoader(this.LoadingManager).load("../brrrr/assets/roundaboutSignContact.png");
         const signGeometry = new THREE.PlaneGeometry(100, 30, 10);
         const signMaterial = new THREE.MeshBasicMaterial({ map: signTexture, transparent: true, side: THREE.FrontSide, alphaTest: 0.4 });
         const sign = new THREE.Mesh(signGeometry, signMaterial);
@@ -62,7 +62,7 @@ class SignsTextures {
         bar.position.y += 80;
         bar.position.x += 173;
         signObject.add(bar);
-        const signTexture = new THREE.TextureLoader(this.LoadingManager).load("../game-portfolio/assets/roundaboutSignTechnologies.png");
+        const signTexture = new THREE.TextureLoader(this.LoadingManager).load("../brrrr/assets/roundaboutSignTechnologies.png");
         const signGeometry = new THREE.PlaneGeometry(100, 30, 10);
         const signMaterial = new THREE.MeshBasicMaterial({ map: signTexture, transparent: true, side: THREE.FrontSide, alphaTest: 0.4 });
         const sign = new THREE.Mesh(signGeometry, signMaterial);
@@ -94,7 +94,7 @@ class SignsTextures {
         bar.position.x += 100;
         bar.position.z += 73;
         signObject.add(bar);
-        const signTexture = new THREE.TextureLoader(this.LoadingManager).load("../game-portfolio/assets/roundaboutSignProjects.png");
+        const signTexture = new THREE.TextureLoader(this.LoadingManager).load("../brrrr/assets/roundaboutSignProjects.png");
         const signGeometry = new THREE.PlaneGeometry(100, 30, 10);
         const signMaterial = new THREE.MeshBasicMaterial({ map: signTexture, transparent: true, side: THREE.FrontSide, alphaTest: 0.4 });
         const sign = new THREE.Mesh(signGeometry, signMaterial);
@@ -125,7 +125,7 @@ class SignsTextures {
         bar.position.y += 80;
         bar.position.x += 26;
         signObject.add(bar);
-        const signTexture = new THREE.TextureLoader(this.LoadingManager).load("../game-portfolio/assets/roundaboutSign.png");
+        const signTexture = new THREE.TextureLoader(this.LoadingManager).load("../brrrr/assets/roundaboutSign.png");
         const signGeometry = new THREE.PlaneGeometry(100, 30, 10);
         const signMaterial = new THREE.MeshBasicMaterial({ map: signTexture, transparent: true, side: THREE.FrontSide, alphaTest: 0.4 });
         const sign = new THREE.Mesh(signGeometry, signMaterial);
@@ -153,7 +153,7 @@ class SignsTextures {
         bar.position.y += 100;
         bar.position.z += 100;
         highwaySignObject.add(bar);
-        const highwaySignTexture = new THREE.TextureLoader(this.LoadingManager).load("../game-portfolio/assets/highwaySign.png");
+        const highwaySignTexture = new THREE.TextureLoader(this.LoadingManager).load("../brrrr/assets/highwaySign.png");
         const highwaySignGeometry = new THREE.PlaneGeometry(150, 80, 10);
         const highwaySignMaterial = new THREE.MeshBasicMaterial({ map: highwaySignTexture, transparent: true, side: THREE.FrontSide, alphaTest: 0.4 });
         const highwaySign = new THREE.Mesh(highwaySignGeometry, highwaySignMaterial);
@@ -174,7 +174,7 @@ class SignsTextures {
 
     addPlaceRoadSign() {
         const signObject = new THREE.Object3D();
-        const signTexture = new THREE.TextureLoader(this.LoadingManager).load('../game-portfolio/assets/placeRoadSign.png');
+        const signTexture = new THREE.TextureLoader(this.LoadingManager).load('../brrrr/assets/placeRoadSign.png');
         const signFace = new THREE.Mesh(new THREE.PlaneGeometry(100, 50, 1), new THREE.MeshBasicMaterial({ map: signTexture, transparent: true, side: THREE.FrontSide, alphaTest: 0.4 }));
         signFace.position.y += 51;
         signObject.add(signFace);
@@ -192,7 +192,7 @@ class SignsTextures {
 
     addleftTurnSign() {
         const signObject = new THREE.Object3D();
-        const signTexture = new THREE.TextureLoader(this.LoadingManager).load('../game-portfolio/assets/drivingOrderSign.png');
+        const signTexture = new THREE.TextureLoader(this.LoadingManager).load('../brrrr/assets/drivingOrderSign.png');
         const signFace = new THREE.Mesh(new THREE.CircleGeometry(10, 32, 1), new THREE.MeshBasicMaterial({ map: signTexture }));
         signFace.position.y += 61;
         signFace.rotation.z += Math.PI / 2;
@@ -211,7 +211,7 @@ class SignsTextures {
 
     addYellowDeadEndSign() {
         const signObject = new THREE.Object3D();
-        const signTexture = new THREE.TextureLoader(this.LoadingManager).load("../game-portfolio/assets/deadEnd.png");
+        const signTexture = new THREE.TextureLoader(this.LoadingManager).load("../brrrr/assets/deadEnd.png");
         const signFace = new THREE.Mesh(new THREE.CircleGeometry(10, 4, 0), new THREE.MeshBasicMaterial({ map: signTexture }));
         signFace.position.y += 60;
         signObject.add(signFace);
@@ -229,7 +229,7 @@ class SignsTextures {
 
     addDeadEndSign() {
         const deadEndRoadSignObject = new THREE.Object3D();
-        let deadEndSignTexture = new THREE.TextureLoader(this.LoadingManager).load('../game-portfolio/assets/deadendsign.png');
+        let deadEndSignTexture = new THREE.TextureLoader(this.LoadingManager).load('../brrrr/assets/deadendsign.png');
         deadEndSignTexture.wrapS = THREE.RepeatWrapping;
         deadEndSignTexture.wrapT = THREE.RepeatWrapping;
         deadEndSignTexture.repeat.set(1, 1);
@@ -250,7 +250,7 @@ class SignsTextures {
 
     addDrivingOrderSign() {
         const roadSignObject = new THREE.Object3D();
-        let signTexture = new THREE.TextureLoader(this.LoadingManager).load("../game-portfolio/assets/drivingOrderSign.png");
+        let signTexture = new THREE.TextureLoader(this.LoadingManager).load("../brrrr/assets/drivingOrderSign.png");
         signTexture.wrapS = THREE.RepeatWrapping;
         signTexture.wrapT = THREE.RepeatWrapping;
         signTexture.repeat.set(1, 1);

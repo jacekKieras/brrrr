@@ -17,7 +17,7 @@ class Grass {
     }
 
     createGrassMesh() {
-        const grassTexture = new THREE.TextureLoader(this.loadingManager).load("../game-portfolio/assets/grass.png");
+        const grassTexture = new THREE.TextureLoader(this.loadingManager).load("../brrrr/assets/grass.png");
         grassTexture.wrapS = THREE.RepeatWrapping;
         grassTexture.wrapT = THREE.RepeatWrapping;
         grassTexture.repeat.set(200, 200);

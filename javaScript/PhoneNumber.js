@@ -10,7 +10,7 @@ class PhoneNumber {
         const pointLight = new THREE.PointLight(0xffffff, 1.5); pointLight.position.set(200, 100, 1190);
         this.scene.add(pointLight);
         const fontloader = new THREE.FontLoader();
-        const font = fontloader.load('../game-portfolio/assets/Ethnocentric Rg_Regular.json', (loadedFont) => {
+        const font = fontloader.load('../brrrr/assets/Ethnocentric Rg_Regular.json', (loadedFont) => {
             const textGeometry = new THREE.TextGeometry('517 827 955', {
                 font: loadedFont,
                 size: 20,

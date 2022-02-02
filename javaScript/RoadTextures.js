@@ -17,7 +17,7 @@ class RoadTextures {
     }
 
     addRoadTexture1() {
-        let roadTexture = new THREE.TextureLoader(this.loadingManager).load("../game-portfolio/assets/road.jpg");
+        let roadTexture = new THREE.TextureLoader(this.loadingManager).load("../brrrr/assets/road.jpg");
         roadTexture.wrapS = THREE.RepeatWrapping;
         roadTexture.wrapT = THREE.RepeatWrapping;
         roadTexture.repeat.set(1, 10);
@@ -31,7 +31,7 @@ class RoadTextures {
     }
 
     addRoadTexture2() {
-        let roadTexture = new THREE.TextureLoader(this.loadingManager).load("../game-portfolio/assets/road.jpg");
+        let roadTexture = new THREE.TextureLoader(this.loadingManager).load("../brrrr/assets/road.jpg");
         roadTexture.wrapS = THREE.RepeatWrapping;
         roadTexture.wrapT = THREE.RepeatWrapping;
         roadTexture.repeat.set(1, 10);
@@ -44,7 +44,7 @@ class RoadTextures {
     }
 
     addRoadTexture3() {
-        let roadTexture = new THREE.TextureLoader(this.loadingManager).load("../game-portfolio/assets/road.jpg");
+        let roadTexture = new THREE.TextureLoader(this.loadingManager).load("../brrrr/assets/road.jpg");
         roadTexture.wrapS = THREE.RepeatWrapping;
         roadTexture.wrapT = THREE.RepeatWrapping;
         roadTexture.repeat.set(1, 10);
@@ -57,7 +57,7 @@ class RoadTextures {
     }
 
     addRoadTexture4() {
-        let roadTexture = new THREE.TextureLoader(this.loadingManager).load("../game-portfolio/assets/road.jpg");
+        let roadTexture = new THREE.TextureLoader(this.loadingManager).load("../brrrr/assets/road.jpg");
         roadTexture.wrapS = THREE.RepeatWrapping;
         roadTexture.wrapT = THREE.RepeatWrapping;
         roadTexture.repeat.set(1, 10);
@@ -72,7 +72,7 @@ class RoadTextures {
 
     addRoadTexture5() {
         //first road texture
-        let roadTexture = new THREE.TextureLoader(this.loadingManager).load("../game-portfolio/assets/road.jpg");
+        let roadTexture = new THREE.TextureLoader(this.loadingManager).load("../brrrr/assets/road.jpg");
         roadTexture.wrapS = THREE.RepeatWrapping;
         roadTexture.wrapT = THREE.RepeatWrapping;
         roadTexture.repeat.set(1, 10);
@@ -86,7 +86,7 @@ class RoadTextures {
     }
 
     addRoundabout() {
-        let roundaboutTexture = new THREE.TextureLoader(this.loadingManager).load('../game-portfolio/assets/roundaboutRoad.jpg');
+        let roundaboutTexture = new THREE.TextureLoader(this.loadingManager).load('../brrrr/assets/roundaboutRoad.jpg');
         roundaboutTexture.wrapS = THREE.RepeatWrapping;
         roundaboutTexture.wrapT = THREE.RepeatWrapping;
         roundaboutTexture.repeat.set(2, 9);
