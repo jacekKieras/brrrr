@@ -161,7 +161,7 @@ class SignsTextures {
         highwaySign.position.z += 100;
         highwaySign.position.x -= 2;
         highwaySign.rotation.y -= Math.PI / 2;
-        const signBack = new THREE.Mesh(new THREE.PlaneGeometry(24, 15, 2), new THREE.MeshBasicMaterial({ color: 0x787878 }));
+        const signBack = new THREE.Mesh(new THREE.PlaneGeometry(55, 30, 2), new THREE.MeshBasicMaterial({ color: 0x787878 }));
         signBack.position.y += 100;
         signBack.position.z += 100;
         signBack.position.x += 1;
@@ -175,7 +175,7 @@ class SignsTextures {
     addPlaceRoadSign() {
         const signObject = new THREE.Object3D();
         const signTexture = new THREE.TextureLoader(this.LoadingManager).load('../brrrr/assets/placeRoadSign.png');
-        const signFace = new THREE.Mesh(new THREE.PlaneGeometry(100, 50, 1), new THREE.MeshBasicMaterial({ map: signTexture, transparent: true, side: THREE.FrontSide, alphaTest: 0.4 }));
+        const signFace = new THREE.Mesh(new THREE.PlaneGeometry(50, 25, 1), new THREE.MeshBasicMaterial({ map: signTexture, transparent: true, side: THREE.FrontSide, alphaTest: 0.4 }));
         signFace.position.y += 51;
         signObject.add(signFace);
         const signBack = new THREE.Mesh(new THREE.PlaneGeometry(50, 10, 1), new THREE.MeshBasicMaterial({ color: 0x787878 }));
