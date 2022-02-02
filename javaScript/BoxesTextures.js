@@ -89,6 +89,10 @@ class BoxesTextures {
         this.addSqlBox();
         this.addRestBox();
         this.addThreeBox();
+        this.add41Box();
+        this.add42Box();
+        this.add43Box();
+        this.add44Box();
     }
 
     add41Box() {
