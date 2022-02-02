@@ -69,7 +69,7 @@ class Car {
         const gltfLoader = new THREE.GLTFLoader();
         gltfLoader.load('/brrrr/assets/car/bmw5.glb', (carModel) => {
             carObject.add(carModel.scene);
-            carObject.scale.set(25, 25, 25);
+            carObject.scale.set(5, 5, 5);
             this.car.add(carObject);
             this.car.rotation.y+=Math.PI;
         })
