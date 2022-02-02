@@ -9,7 +9,7 @@ class Background {
 
     load() {
         let textureLoader = new THREE.CubeTextureLoader(this.loadingManager);
-        textureLoader.setPath('../game-portfolio/assets/background/');
+        textureLoader.setPath('../brrrr/assets/background/');
         const textureCube = textureLoader.load([
             'sh_lf.png',
             'sh_rt.png',
