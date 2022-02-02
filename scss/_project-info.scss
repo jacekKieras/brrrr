@@ -1,0 +1,104 @@
+.project-info {
+  animation: slideProjectInfo 1s forwards;
+  position: absolute;
+  width: 35vw;
+  height: 7vh;
+  left: 20vw;
+  top: 1vh;
+  border: 2px solid;
+  border-radius: 5px;
+  border-color: silver;
+  background-color: rgba(226, 72, 72, 0.55);
+  display: none;
+  user-select: none;
+  color: white;
+  font-size: 2vw;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  .github {
+    position: absolute;
+    top: 1vh;
+    left: 10%;
+    z-index: 1;
+    &:hover {
+      color: black;
+      cursor: pointer;
+    }
+  }
+  .live {
+    position: absolute;
+    top: 1vh;
+    right: 10%;
+    z-index: 1;
+    &:hover {
+      color: black;
+      cursor: pointer;
+    }
+  }
+  .project-name {
+    width: 100%;
+    position: absolute;
+    top: 1vh;
+    text-align: center;
+    z-index: 0;
+  }
+
+  .close {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width: 0.5vw;
+    height: 0.5vh;
+    opacity: 0.3;
+  }
+  .close:hover {
+    opacity: 1;
+    cursor: pointer;
+  }
+  .close:before,
+  .close:after {
+    position: absolute;
+    left: -1vw;
+    top: 1px;
+    content: " ";
+    height: 2vh;
+    width: 2px;
+    background-color: white;
+  }
+  .close:before {
+    transform: rotate(45deg);
+  }
+  .close:after {
+    transform: rotate(-45deg);
+  }
+}
+@keyframes slideProjectInfo {
+  0% {
+    transform: translateY(-10vh);
+  }
+  100% {
+    transform: translateY(0vh);
+  }
+}
+
+.expand-project-button {
+  position: absolute;
+  left: 37.5vw;
+  transform: rotateZ(135deg);
+  width: 20px;
+  height: 20px;
+  border-top: 2px solid red;
+  border-right: 2px solid red;
+  top: 0px;
+  border-radius: 15%;
+  cursor: pointer;
+  display: none;
+  animation: arrowAnimation 1s forwards;
+}
+@keyframes arrowAnimation {
+  0% {
+    top: -60px;
+  }
+  100% {
+    top: 0px;
+  }
+}

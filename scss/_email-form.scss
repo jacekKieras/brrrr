@@ -1,0 +1,78 @@
+.e-mail-form {
+  background-color: rgba($color: #383737, $alpha: 0.55);
+  display: none;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+
+  .from {
+    position: absolute;
+    border-radius: 5px;
+    color: white;
+    border-color: rgba(226, 72, 72, 0.945);
+    background-color: rgba(226, 72, 72, 0.55);
+    height: 5vh;
+    width: 30vw;
+    left: 35vw;
+    top: 35vh;
+    resize: none;
+  }
+  .content {
+    position: absolute;
+    color: whitesmoke;
+    background-color: transparent;
+    border-radius: 5px;
+    border-color: rgba(226, 72, 72, 0.945);
+    background-color: rgba(226, 72, 72, 0.55);
+    height: 10vh;
+    width: 30vw;
+    left: 35vw;
+    top: 42vh;
+    resize: none;
+  }
+  .send-button {
+    position: absolute;
+    width: 30.5vw;
+    height: 5vh;
+    border-radius: 5px;
+    background-color: rgba(226, 72, 72, 1);
+    color: white;
+    left: 35vw;
+    font-size: 2em;
+    top: 55vh;
+    cursor: pointer;
+    font-family: "techFont";
+  }
+  ::placeholder {
+    font-family: "techFont";
+    color: white;
+    opacity: 1;
+  }
+  .email-form-close {
+    position: absolute;
+    left: 65vw;
+    top: 30vh;
+    width: 32px;
+    height: 32px;
+    opacity: 0.3;
+  }
+  .email-form-close:hover {
+    opacity: 1;
+    cursor: pointer;
+  }
+  .email-form-close:before,
+  .email-form-close:after {
+    position: absolute;
+    left: 15px;
+    content: " ";
+    height: 33px;
+    width: 2px;
+    background-color: white;
+  }
+  .email-form-close:before {
+    transform: rotate(45deg);
+  }
+  .email-form-close:after {
+    transform: rotate(-45deg);
+  }
+}

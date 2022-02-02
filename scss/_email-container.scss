@@ -1,0 +1,91 @@
+.email-container {
+  position: absolute;
+
+  color: white;
+  border: 2px solid;
+  border-radius: 5px;
+  border-color: silver;
+  background-color: rgba(226, 72, 72, 0.55);
+  width: 35vw;
+  height: 7vh;
+  right: 5vw;
+  top: 1vh;
+  font-size: 2vw;
+  user-select: none;
+  display: none;
+  animation: slideContact 2s forwards;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+  .email-button {
+    position: absolute;
+    top: 1vh;
+    left: 30%;
+    width: fit-content;
+    text-align: center;
+    z-index: 1;
+    cursor: pointer;
+    &:hover {
+      color: black;
+    }
+  }
+
+  .email-close-button {
+    z-index: 2;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width: 0.5vw;
+    height: 0.5vh;
+    opacity: 0.3;
+  }
+  .email-close-button:hover {
+    opacity: 1;
+    cursor: pointer;
+  }
+  .email-close-button:before,
+  .email-close-button:after {
+    position: absolute;
+    left: -1vw;
+    top: 1px;
+    content: " ";
+    height: 2vh;
+    width: 2px;
+    background-color: white;
+  }
+  .email-close-button:before {
+    transform: rotate(45deg);
+  }
+  .email-close-button:after {
+    transform: rotate(-45deg);
+  }
+}
+@keyframes slideContact {
+  0% {
+    transform: translateY(-10vh);
+  }
+  100% {
+    transform: translateY(0vh);
+  }
+}
+.expand-email-button {
+  position: absolute;
+  right: 20vw;
+  transform: rotateZ(135deg);
+  width: 20px;
+  height: 20px;
+  border-top: 2px solid red;
+  border-right: 2px solid red;
+  top: 0px;
+  border-radius: 15%;
+  cursor: pointer;
+  display: none;
+  animation: arrowAnimation 1s forwards;
+}
+@keyframes arrowAnimation {
+  0% {
+    top: -60px;
+  }
+  100% {
+    top: 0px;
+  }
+}

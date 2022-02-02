@@ -1,0 +1,102 @@
+body {
+  margin: 50;
+  overflow: hidden;
+}
+
+canvas {
+  width: 100vw;
+  height: 100vh;
+}
+@font-face {
+  font-family: "techFont";
+  src: url("/game-portfolio/assets/font.otf");
+}
+
+@import "email-container";
+@import "project-info";
+@import "email-form";
+@import "tips";
+
+.buttons-info {
+  display: none;
+  color: rgb(226, 72, 72);
+  position: absolute;
+  width: 18vw;
+  font-family: "techFont";
+  font-size: 1.7vw;
+  position: absolute;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  user-select: none;
+}
+
+.sending {
+  position: absolute;
+  top: 9vh;
+  left: 45vw;
+  font-size: 2em;
+  color: white;
+  border: 2px solid;
+  border-radius: 5px;
+  border-color: silver;
+  background-color: rgba(226, 72, 72, 0.55);
+  display: none;
+  font-family: "techFont";
+}
+
+.project-tip {
+  position: absolute;
+  left: -100vw;
+  top: 30vh;
+  animation: slideOutTip forwards 9s;
+  background-color: rgba(226, 72, 72, 0.55);
+  border: 2px solid;
+  border-radius: 5px;
+  border-color: silver;
+  font-size: 2em;
+  display: none;
+}
+
+.phone-tip {
+  position: absolute;
+  left: -100vw;
+  top: 10vh;
+  animation: slideOutTip forwards 15s;
+  background-color: rgba(226, 72, 72, 0.55);
+  border: 2px solid;
+  border-radius: 5px;
+  border-color: silver;
+  font-size: 2em;
+  display: none;
+}
+.win-message {
+  position: absolute;
+  left: -100vw;
+  top: 20vh;
+  animation: slideOutTip forwards 20s;
+  background-color: rgba(226, 72, 72, 0.55);
+  border: 2px solid;
+  border-radius: 5px;
+  border-color: silver;
+  font-size: 2em;
+  display: none;
+}
+
+@keyframes slideOutTip {
+  0% {
+    transform: translateX(0);
+  }
+  20% {
+    transform: translateX(0);
+  }
+  40% {
+    transform: translateX(100vw);
+  }
+  80% {
+    transform: translateX(100vw);
+  }
+  100% {
+    transform: translateX(-100vw);
+  }
+}
