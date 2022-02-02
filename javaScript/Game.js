@@ -49,7 +49,6 @@ class Game {
         this.renderer = new THREE.WebGLRenderer({ antialias: true });
         this.renderer.setSize(window.innerWidth, window.innerHeight);
         this.loadingManager = new THREE.LoadingManager();
-        this.createDirectionalLight();
         this.boxesTextures = new BoxesTextures(this.scene, this.world, this.loadingManager);
         this.roadTextures = new RoadTextures(this.scene, this.loadingManager);
         this.signsTextures = new SignsTextures(this.scene, this.loadingManager);
@@ -66,7 +65,7 @@ class Game {
         document.body.appendChild(this.renderer.domElement);
         this.hideTipsScreenOnEnterKeyPress();
         this.loadTextures();
-        
+        this.createDirectionalLight();
         this.animate();
     }
 
@@ -97,9 +96,9 @@ class Game {
     }
 
     createDirectionalLight() {
-        const directionalLight = new THREE.AmbientLight(0xffffff);
+        const directionalLight = new THREE.DirectionalLight(0xffffff, 15);
         directionalLight.position.set(0, 1, 0);
-        directionalLight.castShadow = false;
+        directionalLight.castShadow = true;
         this.scene.add(directionalLight);
     }
 
