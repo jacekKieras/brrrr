@@ -112,7 +112,7 @@ class BoxesTextures {
     addAngularBox1() {
         const angularTexture = new THREE.TextureLoader(this.LoadingManager).load('../brrrr/assets/javascript.png');
         this.boxes.angular1.mesh = new THREE.Mesh(new THREE.BoxGeometry(40, 40, 40), new THREE.MeshBasicMaterial({ map: angularTexture }));
-        this.scene.add(this.boxes.angular.mesh);
+        this.scene.add(this.boxes.angular1.mesh);
         this.boxes.angular1.body = new CANNON.Body({ mass: 1100 });
         const angularShape = new CANNON.Box(new CANNON.Vec3(20, 20, 20));
         this.boxes.angular1.body.addShape(angularShape);
