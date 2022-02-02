@@ -24,7 +24,7 @@ class Game {
     mouseClick = window.addEventListener('mousedown', this.onMouseClick.bind(this), false);
     isEnterPressed = false;
     wasTipsScreenShown = false;
-    //email = new Mail(this.scene);
+    email = new Mail(this.scene);
     //airplane = new Airplane(this.scene, this.email);
     intersects = [];
     //projects = new Projects(this.scene);
