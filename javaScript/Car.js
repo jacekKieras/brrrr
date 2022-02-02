@@ -70,8 +70,9 @@ class Car {
         gltfLoader.load('/brrrr/assets/car/bmw5.glb', (carModel) => {
             carObject.add(carModel.scene);
             carObject.scale.set(1, 1, 1);
+            carObject.rotateZ(180);
             this.car.add(carObject);
-            //this.car.rotation.y+=Math.PI;
+            this.car.rotation.y+=Math.PI;
         })
 
 
