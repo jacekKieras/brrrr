@@ -10,8 +10,8 @@ class Mail {
 //     isMailSent = false;
 //     onMailClick = document.querySelector('.email-button').addEventListener('click', this.showEmailForm.bind(this), false);
 //     sendEmailButton = document.querySelector('.send-button').addEventListener('click', this.sendEmail.bind(this), false);
-//     emailForm = document.querySelector('.e-mail-form');
-     emailFormCloseButton = document.querySelector('.email-form-close').addEventListener('click', this.closeEmailForm.bind(this), false);
+     emailForm = document.querySelector('.e-mail-container');
+     emailFormCloseButton = document.querySelector('.email-close-button').addEventListener('click', this.closeEmailForm.bind(this), false);
 //     contactInfoCloseButton = document.querySelector('.email-close-button').addEventListener('click', this.closeEmailContainer.bind(this), false);
 //     arrowContact = document.querySelector('.expand-email-button');
 
