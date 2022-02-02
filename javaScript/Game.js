@@ -127,7 +127,7 @@ class Game {
         this.buttons.addTechnologiesButton();
         this.buttons.addProjectsButton(this.projects);
         this.buttons.addContactButton();
-        this.projects.addProjects();
+        //this.projects.addProjects();
     }
 
     animate() {
